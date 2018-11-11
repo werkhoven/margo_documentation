@@ -1,0 +1,70 @@
+%% Main Experimental Loop
+
+% initialize previous frame time stamp
+tPrev = toc;
+
+% remove objects from axes and initialize centroid markers
+clean_gui(gui_handles.axes_handle);
+hMark = plot(trackDat.Centroid(:,1),trackDat.Centroid(:,2),...
+	'ro','Parent',gui_handles.axes_handle);
+
+% run experimental loop until duration is exceeded or last frame
+% of the last video file is reached
+while ~trackDat.lastFrame
+
+	% update time stamps and frame rate
+	[trackDat, tPrev] = updateTime(trackDat, tPrev, expmt, gui_handles);
+
+	% query next frame and optionally correct lens distortion
+	[trackDat,expmt] = autoFrame(trackDat,expmt,gui_handles);
+
+	% track, sort to ROIs, output optional fields set during intialization
+	% and compare noise to the noise distribution measured during sampling
+	trackDat = autoTrack(trackDat,expmt,gui_handles);
+
+	% ----------------------------------- %
+	% insert custom tracking sub-routines %
+	% ----------------------------------- %
+
+	% output data tracked fields to binary files
+	[trackDat,expmt] = autoWriteData(trackDat, expmt, gui_handles);
+
+	% update ref at the reference frequency
+	% or reset if noise thresh is exceeded
+	[trackDat, ref_stack, expmt] = ...
+	updateRef(trackDat, ref_stack, expmt, gui_handles);
+
+	% display update
+	if gui_handles.display_menu.UserData ~= 5
+
+		% set image data
+		updateDisplay(trackDat, expmt, imh, gui_handles);
+
+		% update centroid mark position
+		hMark.XData = trackDat.Centroid(:,1);
+		hMark.YData = trackDat.Centroid(:,2);
+	end
+
+	% force immediate screen drawing and callback evaluation
+	drawnow limitrate
+
+	% listen for gui pause/unpause and stop buttons
+	while gui_handles.pause_togglebutton.Value || ...
+		gui_handles.stop_pushbutton.UserData.Value
+
+		[expmt,tPrev,exit] = updatePauseStop(trackDat,expmt,gui_handles);
+
+		if exit
+			for i=1:nargout
+				switch i
+					case 1, varargout(i) = {expmt};
+					case 2, varargout(i) = {trackDat};
+				end
+			end
+			return
+			end
+		end
+
+	end
+
+
