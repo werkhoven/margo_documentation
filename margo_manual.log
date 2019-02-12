@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.5.26)  16 OCT 2018 13:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.5.26)  3 JAN 2019 17:42
 entering extended mode
 **./margo_manual.tex
 (margo_manual.tex
@@ -1822,49 +1822,49 @@ ing_workflow.pdf>]
 File: images/getting_started/tracking_workflow.pdf Graphic file (type pdf)
  <use images/getting_started/tracking_workflow.pdf>
 Package pdftex.def Info: images/getting_started/tracking_workflow.pdf used on i
-nput line 168.
+nput line 173.
 (pdftex.def)             Requested size: 446.26582pt x 168.99553pt.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 189.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 194.
 LaTeX Font Info:    Font shape `T1/phv/b/it' in size <10> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 189.
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 194.
  [6]
-LaTeX Font Info:    Try loading font information for TS1+phv on input line 207.
+LaTeX Font Info:    Try loading font information for TS1+phv on input line 212.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ts1phv.fd"
 File: ts1phv.fd 2001/06/04 scalable font definitions for TS1/phv.
 ) [7]
 <images/Hardware Setup/Tracking box/behavioral_box_isometric_painted_labels.pdf
-, id=860, 2545.51pt x 2762.32pt>
+, id=862, 2545.51pt x 2762.32pt>
 File: images/Hardware Setup/Tracking box/behavioral_box_isometric_painted_label
 s.pdf Graphic file (type pdf)
 
 <use images/Hardware Setup/Tracking box/behavioral_box_isometric_painted_labels
 .pdf>
 Package pdftex.def Info: images/Hardware Setup/Tracking box/behavioral_box_isom
-etric_painted_labels.pdf used on input line 240.
+etric_painted_labels.pdf used on input line 245.
 (pdftex.def)             Requested size: 234.8775pt x 254.87836pt.
-
-<images/Hardware Setup/Behavioral Arenas/autoROI_detection.pdf, id=861, 2805.92
+ [8 <./images/Hardware Setup/Tracking box/behavioral_box_isometric_painted_labe
+ls.pdf>]
+<images/Hardware Setup/Behavioral Arenas/autoROI_detection.pdf, id=952, 2805.92
 284pt x 806.85338pt>
 File: images/Hardware Setup/Behavioral Arenas/autoROI_detection.pdf Graphic fil
 e (type pdf)
 
 <use images/Hardware Setup/Behavioral Arenas/autoROI_detection.pdf>
 Package pdftex.def Info: images/Hardware Setup/Behavioral Arenas/autoROI_detect
-ion.pdf used on input line 254.
+ion.pdf used on input line 259.
 (pdftex.def)             Requested size: 446.26582pt x 128.32355pt.
- [8 <./images/Hardware Setup/Tracking box/behavioral_box_isometric_painted_labe
-ls.pdf>]
-<images/Hardware Setup/Behavioral Arenas/circular_arenas.pdf, id=951, 455.7025p
+
+<images/Hardware Setup/Behavioral Arenas/circular_arenas.pdf, id=953, 455.7025p
 t x 292.09125pt>
 File: images/Hardware Setup/Behavioral Arenas/circular_arenas.pdf Graphic file 
 (type pdf)
 
 <use images/Hardware Setup/Behavioral Arenas/circular_arenas.pdf>
 Package pdftex.def Info: images/Hardware Setup/Behavioral Arenas/circular_arena
-s.pdf used on input line 263.
+s.pdf used on input line 268.
 (pdftex.def)             Requested size: 234.8775pt x 150.55122pt.
  [9 <./images/Hardware Setup/Behavioral Arenas/autoROI_detection.pdf> <./images
 /Hardware Setup/Behavioral Arenas/circular_arenas.pdf
@@ -1873,171 +1873,185 @@ pdfTeX warning: pdflatex.exe (file ./images/Hardware Setup/Behavioral Arenas/ci
 rcular_arenas.pdf): PDF inclusion: multiple pdfs with page group included in a 
 single page
 >] [10] [11]
-<images/Starting a New Experiment/ymaze_96mazes_isometric.pdf, id=1213, 2713.40
+<images/Starting a New Experiment/ymaze_96mazes_isometric.pdf, id=1214, 2713.40
 729pt x 897.42278pt>
 File: images/Starting a New Experiment/ymaze_96mazes_isometric.pdf Graphic file
  (type pdf)
 
 <use images/Starting a New Experiment/ymaze_96mazes_isometric.pdf>
 Package pdftex.def Info: images/Starting a New Experiment/ymaze_96mazes_isometr
-ic.pdf used on input line 342.
+ic.pdf used on input line 347.
 (pdftex.def)             Requested size: 399.29463pt x 132.06061pt.
 
-<images/Hardware Setup/Behavioral Arenas/ROIs_detected_1.png, id=1214, 835.6218
+<images/Hardware Setup/Behavioral Arenas/ROIs_detected_1.png, id=1215, 835.6218
 7pt x 626.34pt>
 File: images/Hardware Setup/Behavioral Arenas/ROIs_detected_1.png Graphic file 
 (type png)
 
 <use images/Hardware Setup/Behavioral Arenas/ROIs_detected_1.png>
 Package pdftex.def Info: images/Hardware Setup/Behavioral Arenas/ROIs_detected_
-1.png used on input line 356.
+1.png used on input line 361.
 (pdftex.def)             Requested size: 234.8775pt x 176.05255pt.
- [12 <./images/Starting a New Experiment/ymaze_96mazes_isometric.pdf> <./images
-/Hardware Setup/Behavioral Arenas/ROIs_detected_1.png>] [13]
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[12 <./images/Starting a New Experiment/ymaze_96mazes_isometric.pdf>] [13 <./im
+ages/Hardware Setup/Behavioral Arenas/ROIs_detected_1.png>]
 LaTeX Font Info:    Font shape `T1/phv/b/it' in size <12> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 402.
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 407.
  [14]
-<images/analysis/namevalue.pdf, id=1728, 632.3625pt x 411.03563pt>
+<images/analysis/namevalue.pdf, id=1730, 632.3625pt x 411.03563pt>
 File: images/analysis/namevalue.pdf Graphic file (type pdf)
 
 <use images/analysis/namevalue.pdf>
-Package pdftex.def Info: images/analysis/namevalue.pdf used on input line 420.
+Package pdftex.def Info: images/analysis/namevalue.pdf used on input line 425.
 (pdftex.def)             Requested size: 446.26582pt x 290.07494pt.
  [15 <./images/analysis/namevalue.pdf>]
-[16] <images/outputs/trace_browser.png, id=1769, 644.4075pt x 623.32875pt>
+[16] <images/outputs/trace_browser.png, id=1773, 651.93562pt x 670.75594pt>
 File: images/outputs/trace_browser.png Graphic file (type png)
 
 <use images/outputs/trace_browser.png>
-Package pdftex.def Info: images/outputs/trace_browser.png used on input line 48
-3.
-(pdftex.def)             Requested size: 281.85587pt x 272.64859pt.
- [17 <./images/outputs/trace_browser.png>] <images/outputs/expmt_fields.pdf, id
-=1775, 515.07733pt x 600.84172pt>
+Package pdftex.def Info: images/outputs/trace_browser.png used on input line 49
+7.
+(pdftex.def)             Requested size: 281.85587pt x 289.99559pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[17] <images/outputs/expmt_fields.pdf, id=1779, 515.07733pt x 600.84172pt>
 File: images/outputs/expmt_fields.pdf Graphic file (type pdf)
 
 <use images/outputs/expmt_fields.pdf>
-Package pdftex.def Info: images/outputs/expmt_fields.pdf used on input line 492
+Package pdftex.def Info: images/outputs/expmt_fields.pdf used on input line 506
 .
 (pdftex.def)             Requested size: 469.75502pt x 547.98618pt.
- [18 <./images/outputs/expmt_fields.pdf>]
-[19]
-Overfull \hbox (65.18893pt too wide) in paragraph at lines 543--544
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[18 <./images/outputs/trace_browser.png>] [19 <./images/outputs/expmt_fields.pd
+f>] [20]
+Overfull \hbox (65.18893pt too wide) in paragraph at lines 557--558
 \T1/phv/m/n/10 cu-late and ex-port cam-era pa-ram-e-ters to cor-rect im-ages. S
 ave the ex-ported ob-ject \TS1/phv/m/n/10 ~\T1/phv/m/sl/10 MARGO/hardware/camer
 a_calibration/
  []
 
-[20]
-<images/vignette_correction/vignette_correction.pdf, id=1817, 2278.93399pt x 17
+[21]
+<images/vignette_correction/vignette_correction.pdf, id=1827, 2278.93399pt x 17
 02.72133pt>
 File: images/vignette_correction/vignette_correction.pdf Graphic file (type pdf
 )
  <use images/vignette_correction/vignette_correction.pdf>
 Package pdftex.def Info: images/vignette_correction/vignette_correction.pdf use
-d on input line 556.
+d on input line 570.
 (pdftex.def)             Requested size: 234.8775pt x 175.47838pt.
- [21 <./images/vignette_correction/vignette_correction.pdf>] [22]
-Overfull \hbox (17.71002pt too wide) in paragraph at lines 592--593
+ [22 <./images/vignette_correction/vignette_correction.pdf>] [23]
+Overfull \hbox (17.71002pt too wide) in paragraph at lines 606--607
 \T1/phv/m/n/10 Use the \T1/phv/m/sl/10 Ba-sic Track-ing \T1/phv/m/n/10 run file
  lo-cated in $\OML/jkp/m/it/10 <$\T1/phv/m/sl/10 MARGO_directory$\OML/jkp/m/it/
 10 >$\T1/phv/m/sl/10 /experiments/Basic Track-ing/run_basictracking.m
  []
 
-<images/custom_exp/initialization.pdf, id=2296, 580.1675pt x 448.00777pt>
+<images/custom_exp/initialization.pdf, id=2306, 580.1675pt x 448.00777pt>
 File: images/custom_exp/initialization.pdf Graphic file (type pdf)
 
 <use images/custom_exp/initialization.pdf>
 Package pdftex.def Info: images/custom_exp/initialization.pdf used on input lin
-e 597.
+e 611.
 (pdftex.def)             Requested size: 469.75502pt x 362.74757pt.
- [23 <./images/custom_exp/initialization.pdf>]
-<images/custom_exp/tracking_loop.pdf, id=2348, 580.1675pt x 502.87875pt>
+ [24 <./images/custom_exp/initialization.pdf>]
+<images/custom_exp/tracking_loop.pdf, id=2358, 580.1675pt x 502.87875pt>
 File: images/custom_exp/tracking_loop.pdf Graphic file (type pdf)
 
 <use images/custom_exp/tracking_loop.pdf>
 Package pdftex.def Info: images/custom_exp/tracking_loop.pdf used on input line
- 626.
+ 640.
 (pdftex.def)             Requested size: 375.80544pt x 325.73933pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/custom_exp/custom_routine.pdf, id=2349, 580.1675pt x 321.2pt>
+<images/custom_exp/custom_routine.pdf, id=2359, 580.1675pt x 321.2pt>
 File: images/custom_exp/custom_routine.pdf Graphic file (type pdf)
 
 <use images/custom_exp/custom_routine.pdf>
 Package pdftex.def Info: images/custom_exp/custom_routine.pdf used on input lin
-e 633.
+e 647.
 (pdftex.def)             Requested size: 375.80544pt x 208.05707pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[24]
+[25]
 
-LaTeX Warning: Text page 25 contains only floats.
+LaTeX Warning: Text page 26 contains only floats.
 
-[25 <./images/custom_exp/tracking_loop.pdf> <./images/custom_exp/custom_routine
+[26 <./images/custom_exp/tracking_loop.pdf> <./images/custom_exp/custom_routine
 .pdf
 
 pdfTeX warning: pdflatex.exe (file ./images/custom_exp/custom_routine.pdf): PDF
  inclusion: multiple pdfs with page group included in a single page
->] <images/custom_exp/clean_up.pdf, id=2451, 580.1675pt x 299.78699pt>
+>] <images/custom_exp/clean_up.pdf, id=2461, 580.1675pt x 299.78699pt>
 File: images/custom_exp/clean_up.pdf Graphic file (type pdf)
 
 <use images/custom_exp/clean_up.pdf>
-Package pdftex.def Info: images/custom_exp/clean_up.pdf used on input line 646.
+Package pdftex.def Info: images/custom_exp/clean_up.pdf used on input line 660.
 
 (pdftex.def)             Requested size: 375.80544pt x 194.1868pt.
- [26 <./images/custom_exp/clean_up.pdf>]
-<images/custom_exp/analysis.pdf, id=2496, 580.1675pt x 369.38pt>
+ [27 <./images/custom_exp/clean_up.pdf>]
+<images/custom_exp/analysis.pdf, id=2506, 580.1675pt x 369.38pt>
 File: images/custom_exp/analysis.pdf Graphic file (type pdf)
 
 <use images/custom_exp/analysis.pdf>
-Package pdftex.def Info: images/custom_exp/analysis.pdf used on input line 683.
+Package pdftex.def Info: images/custom_exp/analysis.pdf used on input line 697.
 
 (pdftex.def)             Requested size: 375.80544pt x 239.26561pt.
- [27 <./images/custom_exp/analysis.pdf>]
-<images/projector/proj_schematic.pdf, id=2544, 4771.72702pt x 4157.19138pt>
+ [28 <./images/custom_exp/analysis.pdf>]
+<images/projector/proj_schematic.pdf, id=2554, 4771.72702pt x 4157.19138pt>
 File: images/projector/proj_schematic.pdf Graphic file (type pdf)
 
 <use images/projector/proj_schematic.pdf>
 Package pdftex.def Info: images/projector/proj_schematic.pdf used on input line
- 701.
+ 715.
 (pdftex.def)             Requested size: 446.26582pt x 388.78424pt.
- [28 <./images/projector/proj_schematic.pdf>]
+ [29 <./images/projector/proj_schematic.pdf>]
 LaTeX Font Info:    Font shape `TS1/phv/b/it' in size <10> not available
-(Font)              Font shape `TS1/phv/b/sl' tried instead on input line 725.
- <images/projector/scrProps.pdf, id=2609, 538.01pt x 215.80624pt>
+(Font)              Font shape `TS1/phv/b/sl' tried instead on input line 739.
+ <images/projector/scrProps.pdf, id=2619, 538.01pt x 215.80624pt>
 File: images/projector/scrProps.pdf Graphic file (type pdf)
 
 <use images/projector/scrProps.pdf>
-Package pdftex.def Info: images/projector/scrProps.pdf used on input line 745.
+Package pdftex.def Info: images/projector/scrProps.pdf used on input line 759.
 (pdftex.def)             Requested size: 446.26582pt x 179.00717pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[29] [30 <./images/projector/scrProps.pdf>] [31]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 761.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 761.
+[30] [31 <./images/projector/scrProps.pdf>] [32]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 775.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 775.
  (margo_manual.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 761.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 761.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 775.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 775.
 Package rerunfilecheck Info: File `margo_manual.out' has not changed.
-(rerunfilecheck)             Checksum: 51D9F387D4A4D3D898B263AFDE9F2806;3433.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 761.
+(rerunfilecheck)             Checksum: 89BFE200A739CD6A536DE76E1F3F1C6E;3445.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 775.
  ) 
 Here is how much of TeX's memory you used:
- 25970 strings out of 493328
- 486715 string characters out of 3139124
- 621627 words of memory out of 3000000
+ 25978 strings out of 493328
+ 486797 string characters out of 3139124
+ 622627 words of memory out of 3000000
  28908 multiletter control sequences out of 15000+200000
  79673 words of font info for 129 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 54i,6n,83p,1180b,524s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{ROIediting} has been referenced but does not exis
+ 54i,6n,83p,1286b,524s stack positions out of 5000i,500n,10000p,200000b,50000s
+pdfTeX warning (dest): name{expmttable} has been referenced but does not exis
 t, replaced by a fixed one
+
+pdfTeX warning (dest): name{ROIediting} has been referenced but does not exist,
+ replaced by a fixed one
 
 pdfTeX warning (dest): name{vignettecorrection} has been referenced but does no
 t exist, replaced by a fixed one
@@ -2072,9 +2086,9 @@ TeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/
 type1/urw/helvetic/uhvbo8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/hel
 vetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvro8a.
 pfb>
-Output written on margo_manual.pdf (31 pages, 17324033 bytes).
+Output written on margo_manual.pdf (32 pages, 17351475 bytes).
 PDF statistics:
- 2707 PDF objects out of 2984 (max. 8388607)
- 142 named destinations out of 1000 (max. 500000)
+ 2719 PDF objects out of 2984 (max. 8388607)
+ 150 named destinations out of 1000 (max. 500000)
  495 words of extra memory for PDF output out of 10000 (max. 10000000)
 
