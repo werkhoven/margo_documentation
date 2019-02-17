@@ -334,5 +334,71 @@ Custom parameter GUIs must satisfy the following constraints to be correctly det
 2. The ExperimentData object (`expmt`) is defined as the GUI function's only input and output
 3. New parameters are assigned to `expmt.parameters.(name)`
 
-Once the GUI function is configured, the GUI will become accessible via the MARGO GUI Experiment Parameters button. See [MATLAB's tutorial on GUIDE](https://www.mathworks.com/help/matlab/creating_guis/about-the-simple-guide-gui-example.html;jsessionid=4ac08f6f0a44aa36865882ca84ab) for details on creating custom GUIs in MATLAB.
+MATLAB GUIDE provides an interface for designing custom GUIs in MATLAB. GUIDE is not the only option for creating GUIs but will be the simplest for most users. In this example, we'll make a very simple GUI to adjust a single parameter, but the functionality can easily be extended to add additional controls for other parameters. For the purposes of this tutorial, we will assume that a GUIDE GUI with a single editable text box named `edit_center_dist_thresh` has been created and saved with the m-file name `center_stim_subgui.m`. In addition to the m-file, GUIDE will also generate `center_stim_subgui.fig`. See [MATLAB's tutorial on GUIDE](https://www.mathworks.com/help/matlab/creating_guis/about-the-simple-guide-gui-example.html;jsessionid=4ac08f6f0a44aa36865882ca84ab) for the basics on creating custom GUIs in MATLAB.
+
+By default, `center_stim_subgui.m` should initialize with several functions that we can use to customize the GUI. Depending on the number of and name controls in the GUI, the functions in the GUI file should be something like the following:
+
+- `center_stim_subgui(varargin)` - The main GUI function that coordinates the various activities of and passes data in and out of the GUI controls. **Do not edit** this function. The main function should be essentially unchanged for GUIDE GUIs to function properly.
+- `center_stim_subgui_OpeningFunction(varargin, hObject, handles)` - This function executes once on opening the GUI and can be used to configure the GUI prior to opening. We will use the function to set the value of the parameter upon opening to 1.) a default value if the parameter is undefined in `expmt.parameters` 2.) to the current value of the parameter if defined in `expmt.parameters`.
+- `center_stim_subgui_OutputFunction(hObject,~,handles)` - This function assigns the output of the GUI main function and will be used to `expmt` with our updated parameter out of the GUI to MARGO.
+- `edit_center_distance_thresh_Callback(hObject, eventData, handles)` - This function executes anytime we change the value of our text box control. From this function we can update the value of our parameter with the current value of the control.
+
+In each of the functions above `varargin` refers to whatever arguments we pass into the GUI, `hObject` refers to the handle to the parent object of the function, and `handles` refers to a struct containing handles to the GUI figure window, axes, and UI controls. When MARGO identifies the sub gui function, it will pass in `expmt` as the only input and assign it as the only output. For this example, the call to the GUI will look something like:
+
+```matlab
+% run custom experiment parameter sub gui
+expmt = center_stim_subgui(expmt)
+```
+
+Because the main function of the GUI should not be edited and the input of the GUI is defined as variable arguments in (varargin), we will assume the first variable argument passed into the GUI is `expmt` and will assign it as the default output of the GUI. We can accomplish this in the OpeningFunction with the following:
+
+```matlab
+% Configure GUI controls, inputs, and outputs on opening
+function center_stim_subgui_OpeningFunction(varargin, hObject, handles)
+
+% assume ExperimentData is the first argument passed into the GUI
+expmt = varargin{1};
+
+% assign ExperimentData as the default GUI output
+handles.output = expmt;
+
+% assign a default value for the parameter if undefined
+if isfield(expmt.parameters,'center_distance')
+    expmt.parameters.center_distance = 10;
+end
+
+% set the text in the text box control
+handles.edit_center_distance_thresh.String = ...
+        sprintf('%.2f', expmt.parameters.center_distance);
+
+% update the GUI data
+guidata(hObject, handles)
+```
+
+Now that the *ExperimentData* object is assigned to `handles.output`, it is set to be the default output of our GUI and will also be accessible in our other functions via the handles struct. By default, GUIDE will execute the OutputFunction of our GUI immediately after opening. We can add some logic that will tell the GUI to wait to output until we close the GUI by adding the following to the OutputFunction:
+
+```matlab
+% stall the function output until the GUI window is closed
+function varargout = center_stim_subgui(hObject, eventData, handles)
+
+% Continue looping while the GUI figure (hObject) is a valid handle
+while ishghandle(hObject)
+    % insert a brief pause to allow CPU to perform other tasks
+    pause(0.002);
+
+    % execute GUI Callback functions
+    drawnow('limitrate');
+end
+
+% assign ExperimentData to the GUI output
+varargout = handles.output;
+```
+
+The above function will allow the GUI to evaluate any pending interactions with our GUI controls and update the values in `handles.output` until we are ready to output the values when the figure window is closed. By configuring the Callback function of our text box, we can update the value of our parameter inside the loop above with the following changes:
+
+```matlab
+```
+
+
+Once the GUI function is configured, the GUI will become accessible via the MARGO GUI Experiment Parameters button. 
 
