@@ -1,8 +1,6 @@
-Introduction
-============
+# Introduction
 
-Quickstart Guide
-----------------
+## Quickstart Guide
 
 
 <figure style="text-align: center">
@@ -11,12 +9,7 @@ Quickstart Guide
     </figcaption>
 </figure>
 
-![*figure 1.1* - Every tracking session follows a standard workflow with
-multiple stages for optional customization. The time needed to setup a
-new session can be substantially reduced by loading saved
-parameters.](images/getting_started/tracking_workflow.pdf){width="95%"}
-
-Overview
+## Overview
 --------
 
 MARGO is a MATLAB-based software package for real-time, high-throughput
@@ -24,8 +17,9 @@ tracking of animals. Rapid tracking and identity sorting in real-time
 means that MARGO is particularly useful for applications requiring
 closed-loop control of individual stimulus delivery and massively
 high-throughput behavioral screens where video storage and processing
-would otherwise be rate-limiting. Margo has two fundamental modes of
-tracking:
+would otherwise be rate-limiting. MARGO offers additional utility through GUI-based customization of tracking parameters, hardware settings, ROI-detection, and saved preferences. Development of custom experimental paradigms is facilitated through MARGO's experiment template tool and API.
+
+### Tracking Modes
 
 1.  **Single Tracking** - This mode is designed to track spatially
     segregated animals in parallel. Spatial segregation allows
@@ -36,55 +30,28 @@ tracking:
     maintained indefinitely without supervision.
 
 2.  **Multi Tracking** - This mode is designed to track groups of
-    animals in parallel in one or more ROIs. Multi tracking can be used
-    to track spatial distribution, activity level, and group dynamics
-    that do not require maintenance of individual identities.
+    animals in parallel in one or more ROIs. Individual identities are not maintained. Multi tracking can be used to track spatial distribution, activity level, and group dynamics that do not require maintenance of individual identities.
 
-Many existing tracking platforms such as Ctrax, idTracker, and
-FlyTracker are designed to track and maintain individual identities of
-mixed groups individuals. Tracking identity in mixed groups requires
-resolving identities through collisions where bodies are overlapping.
-This approach offers the ability to study social behaviors, but because
-collision resolution is computationally expensive, software packages
-focused on solving this perform acquisition and tracking separately.
-Assigning centroid identity by associating individual with a predefined
-region of interest (ROI) allows MARGO to track individuals in real-time
-and avoid recording image data altogether.
+### Data outputs
 
-MARGO offers additional utility through extensive GUI-based
-customization of hardware settings, advanced tracking parameters,
-ROI-detection modes, and saved preferences. In addition to centroid
-data, MARGO can output timestamps, body orientation, body size, speed,
-heading direction, angular velocity, and other custom defined metrics.
-Support for cameras, external displays, and serial COM devices make it
-possible to integrate hardware into experimental paradigms. MARGO
-facilitates experimental paradigms that require closed loop control of
-individual stimuli based on individual behavior. Furthermore, a small
-data footprint and robustness to tracking noise makes MARGO ideal for
-recording behavior over long time scales.
+- centroid coordinates
+- timestamps (interframe interval)
+- speed (pixels or mm s<sup>-1</sup>)
+- body size (pixels<sup>2</sup> or mm<sup>2</sup>)
+- orientation (ellipse fit)
+- heading direction
+- angular velocity
+- comprehensive meta data
+- custom defined outputs
 
-Target audience
----------------
+### Hardware
 
-The target audience of MARGO is any user wanting to use a single,
-integrated platform for recording body position and orientation based
-behavioral metrics over time, particularly for applications requiring
-any of the following: 1) tracking hundreds to thousands of individuals
-simultaneously with little to no human intervention 2) closed-loop
-feedback between real-time tracking data and control of hardware. Many
-features of behavior can be calculated or inferred from these simple
-pieces of information. To extract these measurements, MARGO uses
-thresholded images to track binary blobs. This means that the software
-is optimized for tracking many individuals at very low-resolution and
-not for high-resolution tracking of postural subfeatures (eg. tracking
-positions or orientations of individual body parts). Relying in ROIs to
-track individual identity also means that MARGO is built for
-high-throughput experiments where individuals are physically separated
-into isolated arenas (eg. bottomless 96 well plates). MARGO is not
-designed for collision resolution and therefore does not track the
-identities of multiple individuals sharing the same arena.
+MARGO includes support for the following **hardware**:
+- cameras
+- external displays
+- serial COM devices
 
-Experimental workflow
+## Experimental workflow
 ---------------------
 
 Every live experiment conducted in MARGO follows the same fundamental
@@ -103,10 +70,11 @@ centroid estimation. Before recording data, the user must:
 
 5.  Set experiment parameters
 
-![*figure 1.3* - Every tracking session follows a standard workflow with
-multiple stages for optional customization. The time needed to setup a
-new session can be substantially reduced by loading saved
-parameters.](images/getting_started/tracking_workflow.pdf){width="95%"}
+<figure style="text-align: center">
+    <img src="images/svg_converts/tracking_workflow.svg" style="width: 95%"/>
+    <figcaption class="center_cap" style="text-align: left">
+    </figcaption>
+</figure>
 
 **Select and confirm settings for the camera**
 
